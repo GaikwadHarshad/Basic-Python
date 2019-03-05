@@ -8,9 +8,9 @@ def python_method(num):
     # get starting time of method
     start = time.time()
     sum1 = 0
-    for i in range(1, num+1):
+    for e_t in range(1, num+1):
         # sum of the numbers
-        sum1 = sum1 + i
+        sum1 = sum1 + e_t
         # get ending time of method
         end = time.time()
     # return sum and total execution time of method

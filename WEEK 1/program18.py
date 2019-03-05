@@ -9,5 +9,3 @@ def absolute_path(path_f_name):
 
 # method calling and display absolute path
 print("Absolute file path : ", absolute_path('raw.txt'))
-
-

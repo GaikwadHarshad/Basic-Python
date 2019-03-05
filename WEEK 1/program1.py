@@ -3,5 +3,9 @@
 
 firstName = input("Enter user's first name : ")
 lastName = input("Enter user's last name : ")
-revFirstName = (firstName[::-1] + " " + lastName[::-1])
-print(revFirstName)
+
+if firstName.isdigit() or lastName.isdigit():
+    print("Enter proper string character")
+else:
+    revFirstName = (firstName[::-1] + " " + lastName[::-1])
+    print("Reverse string is : ", revFirstName)

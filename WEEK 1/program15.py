@@ -1,7 +1,7 @@
 """  Write a python program to access environment variables.  """
 
 import os
-# environ is representing string environment
+# environ is mapping object of representing string environment
 print(os.environ)
 # pathname of home directory
 print(os.environ['HOME'])

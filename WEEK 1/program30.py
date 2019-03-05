@@ -3,7 +3,7 @@
 # getting function and classes which helps in opening URLs
 import urllib.request
 
-# get access to the url
+# get access/open to the url
 webUrl = urllib.request.urlopen("https://google.com")
 
 # reading content

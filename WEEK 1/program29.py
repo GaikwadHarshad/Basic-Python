@@ -6,4 +6,4 @@ import socket
 host_name = socket.gethostname()
 
 # display host name
-print("Your host name is: ", host_name)
+print("host name where your routine is running : ", host_name)

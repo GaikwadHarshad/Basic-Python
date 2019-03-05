@@ -6,3 +6,4 @@ year = int(input("Enter the year : "))
 month = int(input("Enter the month of year : "))
 cal = calendar.month(year, month)
 print(cal)
+

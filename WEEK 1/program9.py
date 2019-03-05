@@ -3,9 +3,9 @@
 
 def concatenate_list(list_temp):
     result = ' '
-    for i in list_temp:
+    for l in list_temp:
         # add list of ith element to the result string
-        result += str(i)
+        result += str(l)
     return result
 
 

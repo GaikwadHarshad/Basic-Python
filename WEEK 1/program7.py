@@ -5,8 +5,8 @@
 
 
 def check_data(group_data, num):
-    for i in group_data:
-        if num == i:
+    for gd in group_data:
+        if num == gd:
             return True
     return False
 

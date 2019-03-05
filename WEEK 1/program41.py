@@ -20,7 +20,7 @@ def convert_to_binary(num):
     return bin1
 
 
-n = 50
+n = 8
 # method call
 convert = convert_to_binary(n)
 print("Binary conversion without leading zero's :", convert)

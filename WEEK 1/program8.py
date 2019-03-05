@@ -2,9 +2,9 @@
 
 
 def histogram(group_data):
-    for i in group_data:
+    for gd in group_data:
         dis = ' '
-        num = i
+        num = gd
         while num > 0:
             dis += '#'
             num = num - 1

@@ -11,10 +11,10 @@ color_list_1 = ["Red", "White", "Green", "Blue"]
 color_list_2 = ["White", "Yellow", "Blue", "Black"]
 Final_list = []
 
-for i in color_list_1:
-        if i not in color_list_2:
+for c in color_list_1:
+        if c not in color_list_2:
             # if color not present in another list then add it to final list
-            Final_list.append(i)
+            Final_list.append(c)
 
 
 print(Final_list)

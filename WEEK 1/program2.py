@@ -7,6 +7,7 @@
 
 # accept number from user
 numbers = input("Enter the values/numbers : ")
+
 # generate list by split function
 list1 = numbers.split(",")
 # generate tuple on list
