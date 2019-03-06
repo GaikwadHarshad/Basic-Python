@@ -29,3 +29,11 @@ def script_generate1(number):
     for d in range(1, number + 1):
         dict1[d] = d * d
     return dict1
+
+
+def remove_key(d, k):
+    if k in d:
+        del d[k]
+        return d
+    else:
+        return 0
