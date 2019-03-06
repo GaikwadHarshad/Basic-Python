@@ -49,3 +49,11 @@ def remove_key(d, k):
 def unique_values(value):
     unique_data = set(val for d in value for val in d.values())
     return unique_data
+
+
+# create dictionary from string
+def create_dict(st):
+    d = {}
+    for letter in st:
+        d[letter] = d.get(letter, 0)+1
+    return d
