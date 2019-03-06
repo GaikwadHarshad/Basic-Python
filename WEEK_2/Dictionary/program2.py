@@ -4,7 +4,7 @@ Sample Dictionary : {0: 10, 1: 20}
 Expected Result : {0: 10, 1: 20, 2: 30} """
 
 # import method from Utility
-from Utility import UtilityDS
+from myprograms.Utility import UtilityDS
 # class to perform operation on dictionary
 class Dictionary_2:
 
