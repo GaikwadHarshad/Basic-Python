@@ -22,3 +22,10 @@ def dictionaries():
     dict1 = {1: 10, 2: 15, 3: 20}
     dict2 = {4: 25, 5: 30, 6: 35}
     return dict1, dict2
+
+
+def script_generate1(number):
+    dict1 = {}
+    for d in range(1, number + 1):
+        dict1[d] = d * d
+    return dict1
