@@ -57,3 +57,10 @@ def create_dict(st):
     for letter in st:
         d[letter] = d.get(letter, 0)+1
     return d
+
+
+# print dictionary in table format
+def dict_to_table(d):
+    for k, v in d.items():
+        name, age, address = v
+        print("{:<8} | {:<15} | {:<10} | {:<15}".format(k, name, age, address))
