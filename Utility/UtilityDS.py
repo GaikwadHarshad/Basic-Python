@@ -1,3 +1,6 @@
+from array import *
+
+
 # validate number
 def validate_num(num):
     try:
@@ -5,6 +8,16 @@ def validate_num(num):
         return True
     except Exception:
         return False
+
+
+# function to get occurrence of specific element
+def get_occurrence():
+    array_num = array('i', [1, 3, 5, 3, 7, 9, 3])
+    print("Original array: " + str(array_num))
+    ele = int(input("Enter specific element : "))
+    element = validate_num(ele)
+    if element:
+        return str(array_num.count(element))
 
 
 # add key into dictionary
