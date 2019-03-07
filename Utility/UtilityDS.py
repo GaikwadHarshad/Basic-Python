@@ -80,3 +80,10 @@ def list_to_dict(list_name):
         current_d = current_d[name]
     return new_dictionary
 
+
+# check multiple key exist or not in dictionary
+def check_mul_key(d, d1, d2, d3):
+    a = (d.keys() >= d1)
+    b = (d.keys() >= d2)
+    c = (d.keys() >= d3)
+    return a, b, c
