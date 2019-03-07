@@ -106,3 +106,9 @@ def check_mul_key(d, d1, d2, d3):
 def count_items_dict(d):
     count_val = sum(len(val) for val in d.values())
     return count_val
+
+
+# unpack tuple
+def unpack_tuple(tuplex):
+    v1, v2, v3 = tuplex
+    return v1 + v2 + v3
