@@ -70,3 +70,13 @@ def dict_to_table(d):
 def count_key_values(dict1):
     dictionary = sum(d['success'] for d in dict1)
     return dictionary
+
+
+# convert a list into nested dictionary keys
+def list_to_dict(list_name):
+    new_dictionary = current_d = {}
+    for name in list_name:
+        current_d[name] = {}
+        current_d = current_d[name]
+    return new_dictionary
+
