@@ -87,3 +87,9 @@ def check_mul_key(d, d1, d2, d3):
     b = (d.keys() >= d2)
     c = (d.keys() >= d3)
     return a, b, c
+
+
+# count number of items in dictionary value that is list
+def count_items_dict(d):
+    count_val = sum(len(val) for val in d.values())
+    return count_val
