@@ -64,3 +64,9 @@ def dict_to_table(d):
     for k, v in d.items():
         name, age, address = v
         print("{:<8} | {:<15} | {:<10} | {:<15}".format(k, name, age, address))
+
+
+# count number of value associated with key having success True
+def count_key_values(dict1):
+    dictionary = sum(d['success'] for d in dict1)
+    return dictionary
