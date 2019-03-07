@@ -1,5 +1,5 @@
 from array import *
-
+from copy import deepcopy
 
 # validate number
 def validate_num(num):
@@ -112,3 +112,9 @@ def count_items_dict(d):
 def unpack_tuple(tuplex):
     v1, v2, v3 = tuplex
     return v1 + v2 + v3
+
+
+# clone tuples
+def clone_tuple(tuple_x):
+    new_tuple = deepcopy(tuple_x)
+    return new_tuple
