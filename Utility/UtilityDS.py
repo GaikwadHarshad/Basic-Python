@@ -265,4 +265,28 @@ def max_set(set_15):
             max1 = s1
     return max1
 
-# ----------------------------------------------------------------------------
+# -----------------------------List-----------------------------------------------
+
+
+# creating list
+def create_list(element):
+    li = []
+    try:
+        for e in range(element):
+            input1 = int(input("Enter element : "))
+            valid = validate_num(input1)
+            if valid:
+                li.append(input1)
+            else:
+                print("enter number only")
+    except Exception as e:
+            print(e)
+    return li
+
+
+# sum of list
+def sum_list(li):
+    sum1 = 0
+    for l in li:
+        sum1 += l
+    return sum1
