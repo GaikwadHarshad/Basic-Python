@@ -1,6 +1,7 @@
 from array import *
 from copy import deepcopy
 
+
 # validate number
 def validate_num(num):
     try:
@@ -135,3 +136,15 @@ def check_existence(tuple_z, element):
         if element == t:
             return True
     return False
+
+
+# removing element from tuple
+def remove_tuple(tuple_1, item):
+    new_tuple = []
+    for l in list(tuple_1):
+        if item != l:
+            new_tuple.append(l)
+    return tuple(new_tuple)
+
+
+
