@@ -20,6 +20,8 @@ def get_occurrence():
     if element:
         return str(array_num.count(element))
 
+# ----------------------------dictionary-------------------------------------------
+
 
 # add key into dictionary
 def add_key_dictionary(d):
@@ -108,6 +110,8 @@ def count_items_dict(d):
     count_val = sum(len(val) for val in d.values())
     return count_val
 
+# ----------------------------------tuple------------------------------------------------
+
 
 # unpack tuple
 def unpack_tuple(tuplex):
@@ -153,4 +157,11 @@ def slice_tuple(tuple_2):
     s2 = tuple_2[4:]
     s3 = tuple_2[:4]
     return s1, s2, s3
+
+
+# reverse tuple
+def rev_tuple(tuple_3):
+    rev = tuple_3[::-1]
+    return rev
+
 
