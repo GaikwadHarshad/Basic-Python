@@ -290,3 +290,11 @@ def sum_list(li):
     for l in li:
         sum1 += l
     return sum1
+
+
+# multiplication of list
+def multiplication_list(li):
+    mul = 1
+    for l in li:
+        mul *= l
+    return mul
