@@ -147,4 +147,10 @@ def remove_tuple(tuple_1, item):
     return tuple(new_tuple)
 
 
+# slicing on tuple
+def slice_tuple(tuple_2):
+    s1 = tuple_2[3:5]
+    s2 = tuple_2[4:]
+    s3 = tuple_2[:4]
+    return s1, s2, s3
 
