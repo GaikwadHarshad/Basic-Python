@@ -164,4 +164,105 @@ def rev_tuple(tuple_3):
     rev = tuple_3[::-1]
     return rev
 
+# -----------------------------Set--------------------------------------------------
 
+
+# create set1
+def create_set():
+    new_set = set([10, 20, 30, 40, 50])
+    return new_set
+
+
+# create set2
+def create_set2():
+    new_set2 = set([20, 40, 60, 70, 90])
+    return new_set2
+
+
+# iteration over set
+def iteration(set_1):
+    for s in set_1:
+        print(s)
+
+
+# add members in set
+def add_member(set_2):
+    set_2.add("Pune")
+    set_2.add("Delhi")
+    return set_2
+
+
+# remove item(s) from set
+def remove_item(set_3):
+    pop_set = set(set_3)
+    pop_set.pop()
+    pop_set.pop()
+    return pop_set
+
+
+# remove specific item if present
+def rem_spec_item(set_3, item):
+    if item not in set_3:
+        return "item not found"
+    else:
+        new_set = []
+        for s in list(set_3):
+            if item != s:
+                new_set.append(s)
+        return set(new_set)
+
+
+# intersection of sets
+def intersect(set_4, set_5):
+    return set_4 & set_5
+
+
+# union of sets
+def union(set_6, set_7):
+    return set_6 | set_7
+
+
+# set difference
+def difference(set_8, set_9):
+    set_10 = set_8 - set_9
+    return set_10
+
+
+# symmetric difference in sets
+def symmetric_diff(set_11,set_12):
+    return set_11 ^ set_12
+
+
+# clear the set
+def clear_set(set_13):
+    return set_13.clear()
+
+
+# frozenset program
+def fro_set(frozen):
+    return frozenset(frozen)
+
+
+# min in set
+def min_set(set_14):
+    # return min(set_14)
+    for s in set_14:
+        min1 = s
+        break
+    for s1 in set_14:
+        if min1 > s1:
+            min1 = s1
+    return min1
+
+
+# max in set
+def max_set(set_15):
+    for s in set_15:
+        max1 = s
+        break
+    for s1 in set_15:
+        if max1 < s1:
+            max1 = s1
+    return max1
+
+# ----------------------------------------------------------------------------
