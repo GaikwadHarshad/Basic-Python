@@ -284,6 +284,21 @@ def create_list(element):
     return li
 
 
+# creating list for all types
+def create_list_all(element):
+    li = []
+    try:
+        for e in range(element):
+            input2 = input("Enter element : ")
+            if len(input2) >= 2:
+                li.append(input2)
+            else:
+                print("String should be len 2 or more")
+    except Exception as e:
+        print(e)
+    return li
+
+
 # sum of list
 def sum_list(li):
     sum1 = 0
@@ -307,3 +322,12 @@ def small_element(li):
         if small > l:
             small = l
     return small
+
+
+# count of string whose first and last char is same
+def count_string_char(li):
+    counter = 0
+    for l in li:
+        if l[0] == l[-1]:
+            counter += 1
+    return counter
