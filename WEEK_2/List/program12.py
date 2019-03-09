@@ -7,7 +7,7 @@ class List12:
     create1 = []
     create2 = []
 
-    # function to perform operations on list
+    # function to perform operations on lists to get difference
     def difference_list(self):
         while 1:
             print("---------------------------------------------------")
