@@ -26,9 +26,9 @@ class List12:
                         e = UtilityDS.validate_num(element)
                         if e:
                             # if valid then create list
-                            self.create1 = UtilityDS.create_list_all(element)
+                            self.create1 = UtilityDS.create_list(element)
                             print("List 2 create : ")
-                            self.create2 = UtilityDS.create_list_all(element)
+                            self.create2 = UtilityDS.create_list(element)
                             print("List is created : ", self.create2)
                     elif choice == 2:
                         # if list is empty
@@ -39,10 +39,10 @@ class List12:
                                 print("please create list 2")
                             else:
                                 print("List are empty..create list first.")
-                        # if list in not empty then display list of word longer than Num
+                        # if list in not empty then display difference b/w list
                         else:
-                            common = UtilityDS.common_member(self.create1, self.create2)
-                            print("Common members are : ", common)
+                            diff = UtilityDS.get_diff_list(self.create1, self.create2)
+                            print("difference in lists : ", diff)
                     elif choice == 3:
                         # exit from program
                         exit()
