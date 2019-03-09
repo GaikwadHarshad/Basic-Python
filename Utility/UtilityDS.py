@@ -284,7 +284,7 @@ def create_list(element):
     return li
 
 
-# creating list for all types
+# creating list for all types and len > 2
 def create_list_all(element):
     li = []
     try:
@@ -294,6 +294,18 @@ def create_list_all(element):
                 li.append(input2)
             else:
                 print("String should be len 2 or more")
+    except Exception as e:
+        print(e)
+    return li
+
+
+# creating list for all types
+def list_all_types(element):
+    li = []
+    try:
+        for e in range(element):
+            input2 = input("Enter element : ")
+            li.append(input2)
     except Exception as e:
         print(e)
     return li
@@ -412,3 +424,8 @@ def circular_identical(list1, list2):
         return True
     else:
         return False
+
+
+# find common item in list
+def common_items(list1, list2):
+    return set(list1) & set(list2)
