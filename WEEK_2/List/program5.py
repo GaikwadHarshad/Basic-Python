@@ -7,11 +7,11 @@
 from myprograms.Utility import UtilityDS
 
 
-class List4:
+class List5:
     create = []
 
     # function to perform operations on list
-    def string_char(self):
+    def sort_list(self):
         while 1:
             print("---------------------------------------------------")
             print("1.View List""\n""2.Get Sorted Result ""\n""3.Exit")
@@ -48,5 +48,5 @@ class List4:
 
 
 # instantiation of class
-List4_object = List4()
-List4_object.string_char()
+List5_object = List5()
+List5_object.sort_list()
