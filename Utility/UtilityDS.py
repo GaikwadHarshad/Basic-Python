@@ -353,3 +353,8 @@ def remove_duplicate(li):
             copy_list.add(l)
     return new_list
 
+
+# clone or copy list
+def clone_list(li):
+    clone = li[:]
+    return clone
