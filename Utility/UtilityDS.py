@@ -112,6 +112,7 @@ def count_items_dict(d):
 
 # ----------------------------------tuple------------------------------------------------
 
+
 # unpack tuple
 def unpack_tuple(tuplex):
     v1, v2, v3 = tuplex
@@ -340,3 +341,15 @@ def print_sort_list(list_of_tuple):
 # getting last element from list of tuple
 def last(element):
     return element[-1]
+
+
+# remove duplicates from list
+def remove_duplicate(li):
+    copy_list = set()
+    new_list = []
+    for l in li:
+        if l not in copy_list:
+            new_list.append(l)
+            copy_list.add(l)
+    return new_list
+
