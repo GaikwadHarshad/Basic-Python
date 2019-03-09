@@ -2,6 +2,7 @@ from array import *
 from copy import deepcopy
 from itertools import groupby
 from operator import itemgetter
+import itertools
 
 
 # validate number
@@ -439,3 +440,10 @@ def split_word(list1):
         print(letter)
         for word in words:
             print(word)
+
+
+# remove duplicate from list in list
+def list_to_list(list1):
+    list1.sort()
+    new_list = list(n for n, _ in groupby(list1))
+    return new_list
