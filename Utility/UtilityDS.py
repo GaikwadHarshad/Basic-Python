@@ -360,10 +360,20 @@ def clone_list(li):
     return clone
 
 
-# word is longer than N number
+# word is longer than N number in list
 def word_longer(li, n):
     word_list = []
     for l in li:
         if len(l) >= n:
             word_list.append(l)
     return word_list
+
+
+# get common members from lists
+def common_member(list1, list2):
+    member = []
+    for l1 in list1:
+        for l2 in list2:
+            if l1 == l2:
+                member.append(l2)
+    return member
