@@ -358,3 +358,12 @@ def remove_duplicate(li):
 def clone_list(li):
     clone = li[:]
     return clone
+
+
+# word is longer than N number
+def word_longer(li, n):
+    word_list = []
+    for l in li:
+        if len(l) >= n:
+            word_list.append(l)
+    return word_list
