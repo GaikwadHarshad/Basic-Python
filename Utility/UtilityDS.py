@@ -383,3 +383,18 @@ def common_member(list1, list2):
 def specified_element_rm(li):
     color = [c for (l, c) in enumerate(li) if l not in (0, 4, 5)]
     return color
+
+
+# permutation of list
+def perm(a, k=0):
+    if k == len(a):
+        print(a)
+    else:
+        for i in range(k, len(a)):
+            a[k], a[i] = a[i], a[k]
+            perm(a, k+1)
+            a[k], a[i] = a[i], a[k]
+
+
+
+
