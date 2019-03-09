@@ -4,6 +4,8 @@ from myprograms.Utility import UtilityDS
 
 
 class List1:
+    create = []
+
     # function to perform list creation and get sum of list
     def sum_list(self):
         while 1:
@@ -22,12 +24,15 @@ class List1:
                         e = UtilityDS.validate_num(element)
                         if e:
                             # if valid then create list
-                            create = UtilityDS.create_list(element)
-                            print("List is created : ", create)
+                            self.create = UtilityDS.create_list(element)
+                            print("List is created : ", self.create)
                     elif choice == 2:
-                        # display sum of the list element
-                        sum_list = UtilityDS.sum_list(create)
-                        print("Sum of list : ", sum_list)
+                        if len(self.create) < 1:
+                            print("create list first")
+                        else:
+                            # display sum of the list element
+                            sum_list = UtilityDS.sum_list(self.create)
+                            print("Sum of list : ", sum_list)
                     elif choice == 3:
                         # exit from program
                         exit()
