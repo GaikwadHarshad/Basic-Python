@@ -405,3 +405,10 @@ def get_diff_list(list1, list2):
 def append_list(list1, list2):
     return list1 + list2
 
+
+# circular identical of list
+def circular_identical(list1, list2):
+    if ' '.join(map(str, list2)) in ' '.join(map(str, list1 * 2)):
+        return True
+    else:
+        return False
