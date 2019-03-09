@@ -112,7 +112,6 @@ def count_items_dict(d):
 
 # ----------------------------------tuple------------------------------------------------
 
-
 # unpack tuple
 def unpack_tuple(tuplex):
     v1, v2, v3 = tuplex
@@ -331,3 +330,13 @@ def count_string_char(li):
         if l[0] == l[-1]:
             counter += 1
     return counter
+
+
+# getting sorted list
+def print_sort_list(list_of_tuple):
+    return sorted(list_of_tuple, key=last)
+
+
+# getting last element from list of tuple
+def last(element):
+    return element[-1]
