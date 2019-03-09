@@ -298,3 +298,12 @@ def multiplication_list(li):
     for l in li:
         mul *= l
     return mul
+
+
+# smallest element from list
+def small_element(li):
+    small = li[0]
+    for l in li:
+        if small > l:
+            small = l
+    return small
