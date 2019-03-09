@@ -1,5 +1,7 @@
 from array import *
 from copy import deepcopy
+from itertools import groupby
+from operator import itemgetter
 
 
 # validate number
@@ -429,3 +431,11 @@ def circular_identical(list1, list2):
 # find common item in list
 def common_items(list1, list2):
     return set(list1) & set(list2)
+
+
+# split word in list
+def split_word(list1):
+    for letter, words in groupby(sorted(list1), key=itemgetter(0)):
+        print(letter)
+        for word in words:
+            print(word)
