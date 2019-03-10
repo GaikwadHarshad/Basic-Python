@@ -510,3 +510,13 @@ def get_long_word(st):
 # get UPPER/lower Case
 def upper_lower(st):
     return st.upper(), st.lower()
+
+
+# get unique word in sorted way
+def sort_word():
+    try:
+        str_list = input("Enter comma separate words :")
+        words = [word for word in str_list.split(",")]
+        return ",".join(sorted(list(set(words))))
+    except Exception as e:
+        print(e)
