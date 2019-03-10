@@ -447,3 +447,25 @@ def list_to_list(list1):
     list1.sort()
     new_list = list(n for n, _ in groupby(list1))
     return new_list
+
+# -----------------------String-------------------------------------------------------
+
+
+# string validate
+def validate_string(st):
+    try:
+        string = st
+        if string.isalpha():
+            return True
+        else:
+            return False
+    except Exception as e:
+        print(e)
+
+
+# calculate length of string
+def str_len(st):
+    count = 0
+    for c in st:
+        count += 1
+    return count
