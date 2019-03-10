@@ -520,3 +520,10 @@ def sort_word():
         return ",".join(sorted(list(set(words))))
     except Exception as e:
         print(e)
+
+
+# get last part of string before specified char
+def last_part_string():
+    st = 'https://www.w3resource.com/python-exercises$programming'
+    print("String is : ", st)
+    print("After Result : ", st.rsplit('$', 1)[0], "\n""After Result", st.rsplit('/', 1)[0])
