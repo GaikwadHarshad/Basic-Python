@@ -505,3 +505,8 @@ def get_long_word(st):
         word_string.append((len(s), s))
     word_string.sort()
     return word_string[-1][1]
+
+
+# get UPPER/lower Case
+def upper_lower(st):
+    return st.upper(), st.lower()
