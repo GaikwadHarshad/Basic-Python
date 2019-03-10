@@ -485,3 +485,14 @@ def replace_char(st):
     st = st.replace(ch, '$')
     st = ch + st[1:]
     return st
+
+
+# add string ing/ly at end
+def string_suffix(st):
+    len_str = len(st)
+    if len_str > 2:
+        if st[-3:] == 'ing':
+            st += 'ly'
+        else:
+            st += 'ing'
+    return st
