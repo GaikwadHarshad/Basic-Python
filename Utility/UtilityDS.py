@@ -532,3 +532,9 @@ def last_part_string():
 # get formatted result of string
 def format_string(st):
     return textwrap.fill(st, width=50)
+
+
+# count substring in string
+def count_substring(sub):
+    string = "python is an interpreted, python high-level, puthon is general-purpose programming language"
+    return string.count(sub)
