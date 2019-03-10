@@ -538,3 +538,8 @@ def format_string(st):
 def count_substring(sub):
     string = "python is an interpreted, python high-level, puthon is general-purpose programming language"
     return string.count(sub)
+
+
+# reverse string
+def reverse_string(st):
+    return ''.join(reversed(st))
