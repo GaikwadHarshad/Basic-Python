@@ -469,3 +469,12 @@ def str_len(st):
     for c in st:
         count += 1
     return count
+
+
+# get character frequency
+def char_frequency(st):
+    freq = {}
+    for s in st:
+        freq[s] = freq.get(s, 0) + 1
+    return str(freq)
+
