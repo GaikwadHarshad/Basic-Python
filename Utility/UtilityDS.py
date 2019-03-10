@@ -496,3 +496,12 @@ def string_suffix(st):
         else:
             st += 'ing'
     return st
+
+
+# get longest word from string list
+def get_long_word(st):
+    word_string = []
+    for s in st:
+        word_string.append((len(s), s))
+    word_string.sort()
+    return word_string[-1][1]
