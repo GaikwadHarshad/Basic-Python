@@ -3,7 +3,7 @@ from copy import deepcopy
 from itertools import groupby
 from operator import itemgetter
 import itertools
-
+import textwrap
 
 # validate number
 def validate_num(num):
@@ -527,3 +527,8 @@ def last_part_string():
     st = 'https://www.w3resource.com/python-exercises$programming'
     print("String is : ", st)
     print("After Result : ", st.rsplit('$', 1)[0], "\n""After Result", st.rsplit('/', 1)[0])
+
+
+# get formatted result of string
+def format_string(st):
+    return textwrap.fill(st, width=50)
