@@ -478,3 +478,10 @@ def char_frequency(st):
         freq[s] = freq.get(s, 0) + 1
     return str(freq)
 
+
+# replace char with $ except 1st char
+def replace_char(st):
+    ch = st[0]
+    st = st.replace(ch, '$')
+    st = ch + st[1:]
+    return st
