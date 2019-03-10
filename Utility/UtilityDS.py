@@ -543,3 +543,10 @@ def count_substring(sub):
 # reverse string
 def reverse_string(st):
     return ''.join(reversed(st))
+
+
+# get lowercase letter of N char with whole string
+def get_lowercase(st, n):
+    return st[:n].lower() + st[n:]
+
+# -------------------------------------------------------------------------------
