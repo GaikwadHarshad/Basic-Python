@@ -417,7 +417,7 @@ def get_diff_list(list1, list2):
     return set(list1)-set(list2)
 
 
-# append list
+# append a list
 def append_list(list1, list2):
     return list1 + list2
 
