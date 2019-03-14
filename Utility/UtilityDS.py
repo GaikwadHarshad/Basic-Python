@@ -541,7 +541,7 @@ def count_substring(sub):
     return string.count(sub)
 
 
-# reverse string
+# reversing string
 def reverse_string(st):
     return ''.join(reversed(st))
 
