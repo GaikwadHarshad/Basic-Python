@@ -71,7 +71,7 @@ def unique_values(value):
     return unique_data
 
 
-# create dictionary from string
+# create dictionary from strings
 def create_dict(string):
     d = {}
     for letter in string:
