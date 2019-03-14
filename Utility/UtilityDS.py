@@ -349,7 +349,7 @@ def count_string_char(li):
     return counter
 
 
-# getting sorted list
+# get a sorted list
 def print_sort_list(list_of_tuple):
     return sorted(list_of_tuple, key=last)
 
