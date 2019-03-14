@@ -146,7 +146,7 @@ def check_existence(tuple_z, element):
     return False
 
 
-# removing element from tuple
+# removing elements from tuple
 def remove_tuple(tuple_1, item):
     new_tuple = []
     for l in list(tuple_1):
