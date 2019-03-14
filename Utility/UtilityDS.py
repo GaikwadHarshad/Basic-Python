@@ -50,10 +50,10 @@ def dictionaries():
 
 # script to generate dictionary
 def script_generate1(number):
-    dict1 = {}
+    dictionary1 = {}
     for d in range(1, number + 1):
-        dict1[d] = d * d
-    return dict1
+        dictionary1[d] = d * d
+    return dictionary1
 
 
 # removing key from dictionary
