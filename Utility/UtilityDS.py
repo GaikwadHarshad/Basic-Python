@@ -546,7 +546,7 @@ def reverse_string(st):
     return ''.join(reversed(st))
 
 
-# get lowercase letter of N char with whole string
+# get lowercase first n characters in a string.
 def get_lowercase(st, n):
     return st[:n].lower() + st[n:]
 
