@@ -370,7 +370,7 @@ def remove_duplicate(li):
     return new_list
 
 
-# clone or copy list
+# clone or copy lists
 def clone_list(li):
     clone = li[:]
     return clone
