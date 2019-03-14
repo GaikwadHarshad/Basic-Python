@@ -401,7 +401,7 @@ def specified_element_rm(li):
     return color
 
 
-# permutation of list
+# permutations of list
 def perm(a, k=0):
     if k == len(a):
         print(a)
