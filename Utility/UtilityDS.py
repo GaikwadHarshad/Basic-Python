@@ -272,7 +272,7 @@ def max_set(set_15):
 # -----------------------------List-----------------------------------------------
 
 
-# creating list
+# creating List
 def create_list(element):
     li = []
     try:
@@ -323,7 +323,7 @@ def sum_list(li):
     return sum1
 
 
-# multiplication of list
+# Multiplication of list
 def multiplication_list(li):
     mul = 1
     for l in li:
