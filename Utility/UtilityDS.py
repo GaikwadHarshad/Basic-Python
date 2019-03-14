@@ -530,7 +530,7 @@ def last_part_string():
     print("After Result : ", st.rsplit('$', 1)[0], "\n""After Result", st.rsplit('/', 1)[0])
 
 
-# get formatted result of string
+# get the formatted result of string
 def format_string(st):
     return textwrap.fill(st, width=50)
 
