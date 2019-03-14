@@ -315,7 +315,7 @@ def list_all_types(element):
     return li
 
 
-# sum of list
+# sum of all list
 def sum_list(li):
     sum1 = 0
     for l in li:
