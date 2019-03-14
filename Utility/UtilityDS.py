@@ -395,7 +395,7 @@ def common_member(list1, list2):
     return member
 
 
-# remove element of specified position
+# remove element of specified position in List
 def specified_element_rm(li):
     color = [c for (l, c) in enumerate(li) if l not in (0, 4, 5)]
     return color
