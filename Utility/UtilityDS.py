@@ -171,7 +171,7 @@ def rev_tuple(tuple_3):
 # -----------------------------Set--------------------------------------------------
 
 
-# create set1
+# create set 1
 def create_set():
     new_set = set([10, 20, 30, 40, 50])
     return new_set
@@ -189,14 +189,14 @@ def iteration(set_1):
         print(s)
 
 
-# add members in set
+# add member in set
 def add_member(set_2):
     set_2.add("Pune")
     set_2.add("Delhi")
     return set_2
 
 
-# remove item(s) from set
+# remove item(s) from the set
 def remove_item(set_3):
     pop_set = set(set_3)
     pop_set.pop()
@@ -204,7 +204,7 @@ def remove_item(set_3):
     return pop_set
 
 
-# remove specific item if present
+# remove specific items if present
 def rem_spec_item(set_3, item):
     if item not in set_3:
         return "item not found"
@@ -216,38 +216,38 @@ def rem_spec_item(set_3, item):
         return set(new_set)
 
 
-# intersection of sets
+# intersection between sets
 def intersect(set_4, set_5):
     return set_4 & set_5
 
 
-# union of sets
+# unions of sets
 def union(set_6, set_7):
     return set_6 | set_7
 
 
-# set difference
+# get set difference
 def difference(set_8, set_9):
     set_10 = set_8 - set_9
     return set_10
 
 
-# symmetric difference in sets
+# get symmetric difference in sets
 def symmetric_diff(set_11, set_12):
     return set_11 ^ set_12
 
 
-# clear the set
+# clear set
 def clear_set(set_13):
     return set_13.clear()
 
 
-# frozenset program
+# frozenset
 def fro_set(frozen):
     return frozenset(frozen)
 
 
-# min in set
+# minimum in set
 def min_set(set_14):
     # return min(set_14)
     for s in set_14:
@@ -259,7 +259,7 @@ def min_set(set_14):
     return min1
 
 
-# max in set
+# maximum in set
 def max_set(set_15):
     for s in set_15:
         max1 = s
