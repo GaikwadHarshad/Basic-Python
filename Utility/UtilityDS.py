@@ -92,7 +92,7 @@ def count_key_values(dictionary1):
     return dictionary
 
 
-# convert a list into nested dictionary keys
+# convert a list into nested dictionary key
 def list_to_dict(list_name):
     new_dictionary = current_d = {}
     for name in list_name:
