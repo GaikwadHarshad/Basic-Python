@@ -412,7 +412,7 @@ def perm(a, k=0):
             a[k], a[i] = a[i], a[k]
 
 
-# get list differences
+# get list difference
 def get_diff_list(list1, list2):
     return set(list1)-set(list2)
 
