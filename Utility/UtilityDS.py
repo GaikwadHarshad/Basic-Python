@@ -123,7 +123,7 @@ def unpack_tuple(tuplex):
     return v1 + v2 + v3
 
 
-# clone tuples
+# clone tuple
 def clone_tuple(tuple_x):
     new_tuple = deepcopy(tuple_x)
     return new_tuple
