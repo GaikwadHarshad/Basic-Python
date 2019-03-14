@@ -472,7 +472,7 @@ def str_len(st):
     return count
 
 
-# get character frequency
+# get characters frequency
 def char_frequency(st):
     freq = {}
     for s in st:
