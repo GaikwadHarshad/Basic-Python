@@ -513,7 +513,7 @@ def upper_lower(st):
     return st.upper(), st.lower()
 
 
-# get unique word in sorted way
+# get unique words in sorted way
 def sort_word():
     try:
         str_list = input("Enter comma separate words :")
