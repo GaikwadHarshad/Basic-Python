@@ -87,8 +87,8 @@ def dict_to_table(d):
 
 
 # count number of value associated with key having success True
-def count_key_values(dict1):
-    dictionary = sum(d['success'] for d in dict1)
+def count_key_values(dictionary1):
+    dictionary = sum(d['success'] for d in dictionary1)
     return dictionary
 
 
