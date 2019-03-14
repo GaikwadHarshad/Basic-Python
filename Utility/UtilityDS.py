@@ -138,7 +138,7 @@ def get_repeat_items(tuple_y):
             return False
 
 
-# check element existence in tuples
+# check element existence in the tuples
 def check_existence(tuple_z, element):
     for t in tuple_z:
         if element == t:
