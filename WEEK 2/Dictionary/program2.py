@@ -8,7 +8,7 @@ from myprograms.Utility import UtilityDS
 
 
 # class to perform operation on dictionary
-class Dictionary_2:
+class Dictionary_Key:
 
     def add_key(self):
         try:
@@ -22,5 +22,5 @@ class Dictionary_2:
 
 
 # creating instance
-d = Dictionary_2()
+d = Dictionary_Key()
 d.add_key()

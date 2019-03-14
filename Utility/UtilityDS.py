@@ -24,8 +24,8 @@ def get_occurrence():
     if element:
         return str(array_num.count(element))
 
-# ----------------------------dictionary-------------------------------------------
 
+# ----------------------------dictionary-------------------------------------------
 
 # add key into dictionary
 def add_key_dictionary(d):
