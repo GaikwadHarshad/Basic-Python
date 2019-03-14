@@ -43,9 +43,9 @@ def concatenate_dict(d1, d2, d3):
 
 # getting dictionaries initialized
 def dictionaries():
-    dict1 = {1: 10, 2: 15, 3: 20}
-    dict2 = {4: 25, 5: 30, 6: 35}
-    return dict1, dict2
+    dictionary1 = {1: 10, 2: 15, 3: 20}
+    dictionary2 = {4: 25, 5: 30, 6: 35}
+    return dictionary1, dictionary2
 
 
 # script to generate dictionary
