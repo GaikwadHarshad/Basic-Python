@@ -72,9 +72,9 @@ def unique_values(value):
 
 
 # create dictionary from string
-def create_dict(st):
+def create_dict(string):
     d = {}
-    for letter in st:
+    for letter in string:
         d[letter] = d.get(letter, 0)+1
     return d
 
