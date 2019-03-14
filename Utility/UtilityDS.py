@@ -435,7 +435,7 @@ def common_items(list1, list2):
     return set(list1) & set(list2)
 
 
-# split word in list
+# split the word in list
 def split_word(list1):
     for letter, words in groupby(sorted(list1), key=itemgetter(0)):
         print(letter)
