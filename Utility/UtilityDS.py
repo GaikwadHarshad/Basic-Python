@@ -117,7 +117,7 @@ def count_items_dict(d):
 # ----------------------------------tuple------------------------------------------------
 
 
-# unpack tuple
+# unpacked tuple
 def unpack_tuple(tuplex):
     v1, v2, v3 = tuplex
     return v1 + v2 + v3
