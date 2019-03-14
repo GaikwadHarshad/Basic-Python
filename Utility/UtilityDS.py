@@ -430,7 +430,7 @@ def circular_identical(list1, list2):
         return False
 
 
-# find common item in list
+# find common item in lists
 def common_items(list1, list2):
     return set(list1) & set(list2)
 
