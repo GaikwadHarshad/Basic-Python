@@ -523,7 +523,7 @@ def sort_word():
         print(e)
 
 
-# get last part of string before specified char
+# get last part of the string before specified char
 def last_part_string():
     st = 'https://www.w3resource.com/python-exercises$programming'
     print("String is : ", st)
