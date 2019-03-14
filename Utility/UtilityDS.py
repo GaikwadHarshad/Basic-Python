@@ -57,9 +57,9 @@ def script_generate1(number):
 
 
 # removing key from dictionary
-def remove_key(d, k):
-    if k in d:
-        del d[k]
+def remove_key(d, key):
+    if key in d:
+        del d[key]
         return d
     else:
         return 0
