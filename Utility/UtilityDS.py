@@ -535,7 +535,7 @@ def format_string(st):
     return textwrap.fill(st, width=50)
 
 
-# count substring in string
+# count substring of string in string
 def count_substring(sub):
     string = "python is an interpreted, python is high-level, python is general-purpose programming language"
     return string.count(sub)
