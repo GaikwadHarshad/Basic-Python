@@ -163,7 +163,7 @@ def slice_tuple(tuple_2):
     return s1, s2, s3
 
 
-# reverse tuple
+# reversing tuple
 def rev_tuple(tuple_3):
     rev = tuple_3[::-1]
     return rev
