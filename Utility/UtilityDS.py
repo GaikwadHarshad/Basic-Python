@@ -488,7 +488,7 @@ def replace_char(st):
     return st
 
 
-# add string ing/ly at end
+# add suffix string ing/ly at end
 def string_suffix(st):
     len_str = len(st)
     if len_str > 2:
