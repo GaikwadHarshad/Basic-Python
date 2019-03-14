@@ -340,7 +340,7 @@ def small_element(li):
     return small
 
 
-# count of string whose first and last char is same
+# count of string whose First and Last char is same
 def count_string_char(li):
     counter = 0
     for l in li:
