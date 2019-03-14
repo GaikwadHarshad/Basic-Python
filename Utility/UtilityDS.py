@@ -452,7 +452,7 @@ def list_to_list(list1):
 # -----------------------String-------------------------------------------------------
 
 
-# string validate
+# string validation
 def validate_string(st):
     try:
         string = st
@@ -464,7 +464,7 @@ def validate_string(st):
         print(e)
 
 
-# calculate length of string
+# calculate length of the  string
 def str_len(st):
     count = 0
     for c in st:
