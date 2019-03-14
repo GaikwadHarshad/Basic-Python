@@ -129,7 +129,7 @@ def clone_tuple(tuple_x):
     return new_tuple
 
 
-# get repeated items in tuple
+# get repeated items is in tuple
 def get_repeat_items(tuple_y):
     for t in tuple_y:
         if tuple_y.count(t) > 1:
