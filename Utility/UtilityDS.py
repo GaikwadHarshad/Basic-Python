@@ -499,7 +499,7 @@ def string_suffix(st):
     return st
 
 
-# get longest word from string list
+# get the longest word from string list
 def get_long_word(st):
     word_string = []
     for s in st:
