@@ -376,7 +376,7 @@ def clone_list(li):
     return clone
 
 
-# word is longer than N number in list
+# Word is longer than N number in list
 def word_longer(li, n):
     word_list = []
     for l in li:
