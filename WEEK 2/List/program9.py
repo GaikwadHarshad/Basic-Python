@@ -40,7 +40,7 @@ class List9:
                                 print("please create list 2")
                             else:
                                 print("List are empty..create list first.")
-                        # if list in not empty then display list of word longer than Num
+                        # if list in not empty , display list of word longer than Num
                         else:
                             common = UtilityDS.common_member(self.create1, self.create2)
                             print("Common members are : ", common)

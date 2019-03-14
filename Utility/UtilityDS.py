@@ -385,7 +385,7 @@ def word_longer(li, n):
     return word_list
 
 
-# get common members from lists
+# getting common members from lists
 def common_member(list1, list2):
     member = []
     for l1 in list1:
