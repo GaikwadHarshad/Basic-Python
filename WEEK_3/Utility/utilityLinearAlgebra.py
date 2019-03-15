@@ -43,5 +43,13 @@ class LinearAlgebra:
             multiplication[r], sum1 = sum1, 0
         return multiplication
 
+# multiplication of matrices
+    def multiply_matrix(self, matrix_1, matrix_2):
+        self.result = [[0, 0, 0], [0, 0, 0], [0, 0, 0]]
+        for row in range(len(matrix_1)):
+            for col in range(len(matrix_1[0])):
+                # add two matrices in resultant matrix
+                self.result[row][col] = matrix_1[row][col] * matrix_2[row][col]
+        return self.result
 
 
