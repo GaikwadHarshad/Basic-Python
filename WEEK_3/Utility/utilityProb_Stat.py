@@ -17,3 +17,8 @@ class ProbabilityStatistics:
     def drawing_ace_after_king(self):
         probability = self.ace/(self.cards-1)
         return probability
+
+# function for getting probability of an ace after drawing ace on 1st draw
+    def drawing_ace_after_ace(self):
+        probability = (self.ace-1)/(self.cards-1)
+        return probability
