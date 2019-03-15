@@ -25,6 +25,23 @@ class LinearAlgebra:
                 matrix_1[row][col] = matrix_1[row][col] * num
         return matrix_1
 
+# function for multiplication of vector and matrix
+    @staticmethod
+    def vector_matrix(matrix_1, vector):
+        rows = len(matrix_1)
+        vector_range = len(vector)
+        # create resultant matrix with N rows
+        multiplication = [0] * rows
+        sum1 = 0
+        for r in range(rows):
+            # getting each row of matrix
+            row = matrix_1[r]
+            for value in range(vector_range):
+                # multiplying each element of row with each element of vector
+                # add get sum of each multiplied element
+                sum1 += sum(row[value] * vector[value])
+            multiplication[r], sum1 = sum1, 0
+        return multiplication
 
 
 
