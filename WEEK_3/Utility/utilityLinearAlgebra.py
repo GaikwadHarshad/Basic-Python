@@ -52,7 +52,7 @@ class LinearAlgebra:
                 self.result[row][col] = matrix_1[row][col] * matrix_2[row][col]
         return self.result
 
- # transpose of matrix
+# transpose of matrix
     def transpose_matrix(self, matrix_1):
         self.result = [[0, 0, 0], [0, 0, 0], [0, 0, 0]]
         for row in range(len(matrix_1)):
