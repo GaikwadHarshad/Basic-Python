@@ -12,3 +12,8 @@ class ProbabilityStatistics:
     def drawing_ace(self):
         probability = self.ace/self.cards
         return probability
+
+# function for getting probability of an ace from 52 cards
+    def drawing_ace_after_king(self):
+        probability = self.ace/(self.cards-1)
+        return probability
