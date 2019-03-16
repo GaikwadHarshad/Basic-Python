@@ -124,3 +124,18 @@ class ProbabilityStatistics:
     def get_rain_traffic_late(self):
         rain_traffic_late = self.rain * self.traffic * self.late
         return round(rain_traffic_late, 2)
+
+# function to get probability of woman has cancer if she has positive mammmogram result
+    def mammogram_result(self):
+        # One percent of women over 50 have breast cancer
+        cancer = 0.01
+        # women not having cancer
+        not_cancer = 0.99
+        # Ninety percent of women who have breast cancer test positive on mammograms
+        positive_result = 0.9
+        # Eight percent of women will have false positives
+        false_positive = 0.08
+        print("--------------------------------------------------------------------")
+        return (positive_result * cancer) / ((positive_result * cancer) + (false_positive * not_cancer))
+
+
