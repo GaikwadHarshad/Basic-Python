@@ -1,3 +1,4 @@
+import random
 # class to perform operation on probability and statistics
 class ProbabilityStatistics:
     # constructor
@@ -138,4 +139,23 @@ class ProbabilityStatistics:
         print("--------------------------------------------------------------------")
         return (positive_result * cancer) / ((positive_result * cancer) + (false_positive * not_cancer))
 
+# function to get random number
+    def random_number(self, random_list):
+        random_num = random.choice(random_list)
+        return random_num
 
+# function to get probability of random number
+    def random_probability(self, random_list, random_num):
+        count = 0
+        # iterate over random_list
+        for r in random_list:
+            # comparing each random number with random_num
+            if r == random_num:
+                count += 1
+        # if found then get probability of random number
+        if count >= 1:
+            probability = count/len(random_list)
+            return round(probability, 2)
+        # else display not found
+        else:
+            return "No random number found in list of interval"
