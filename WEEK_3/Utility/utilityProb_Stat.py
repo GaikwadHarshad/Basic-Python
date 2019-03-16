@@ -82,6 +82,27 @@ class ProbabilityStatistics:
         probability_of_a = len(success_event)/total_sample
         return probability_of_a
 
+# function for probability of getting exactly one head in sample space
+    @staticmethod
+    def at_least_one_head(sample_space):
+        count = 0
+        total_sample = 8
+        success_event = []
+        # iterate over sample_space
+        for sample in sample_space:
+            # iterate each word in sample space
+            for word in sample:
+                # if word contain char H then count += 1
+                if word == 'H':
+                    count += 1
+            if count >= 1:
+                # if H occur in 1 time then append word in list
+                success_event.append(sample)
+            count = 0
+        print("At least one head : ",  success_event)
+        # getting probability of successive event
+        probability_of_a = len(success_event)/total_sample
+        return probability_of_a
 
 
 

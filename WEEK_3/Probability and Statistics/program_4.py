@@ -19,7 +19,8 @@ class TossCoinThreeTimes(ProbabilityStatistics):
     def probability_on_coin(self):
         print("1.View sample space ""\n""2. probability of three heads, HHH")
         print("3.probability that you observe exactly one heads?")
-        print("4.probability that you observe at least two heads""\n""5.Exit")
+        print("4.Given that you have observed at least one heads""\n""probability that you observe at least two heads")
+        print("5.Exit")
         while 1:
             try:
                 print("---------------------------------------------------------------")
@@ -40,6 +41,9 @@ class TossCoinThreeTimes(ProbabilityStatistics):
                         one_head = ProbabilityStatistics.get_one_head(self.sample_space)
                         print("Probability that you observe exactly one heads : ", one_head)
                     elif choice == 4:
+                        # probability of at least one head
+                        at_least_one_head = ProbabilityStatistics.at_least_one_head(self.sample_space)
+                        print("Observed at least one head : ", at_least_one_head)
                         # probability of at least two head
                         two_head = ProbabilityStatistics.get_two_head(self.sample_space)
                         print("Probability that you observe at least two heads : ", two_head)
