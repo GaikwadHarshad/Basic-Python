@@ -47,6 +47,7 @@ class TossCoinThreeTimes(ProbabilityStatistics):
                         # probability of at least two head
                         two_head = ProbabilityStatistics.get_two_head(self.sample_space)
                         print("Probability that you observe at least two heads : ", two_head)
+                        print("Final Probability of both : ", at_least_one_head/two_head)
                     elif choice == 5:
                         exit()
                     else:

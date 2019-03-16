@@ -7,6 +7,14 @@ class ProbabilityStatistics:
         self.queen = 4
         self.jack = 4
         self.cards = 52
+        self.rain = 1 / 3
+        self.not_rain = 2 / 3
+        self.late = 1 / 2
+        self.not_late = 1/2
+        self.traffic = 1 / 2
+        self.not_traffic = 1 / 2
+        self.not_rain_traffic = 1 / 4
+        self.not_rain_traffic_not_late = 3 / 4
 
     # function for getting probability of an ace from 52 cards
     def drawing_ace(self):
@@ -60,7 +68,7 @@ class ProbabilityStatistics:
         probability_of_a = len(success_event)/total_sample
         return probability_of_a
 
-# function for probability of getting exactly one head in sample space
+    # function for probability of getting exactly one head in sample space
     @staticmethod
     def get_two_head(sample_space):
         count = 0
@@ -104,5 +112,15 @@ class ProbabilityStatistics:
         probability_of_a = len(success_event)/total_sample
         return probability_of_a
 
+# function to store values of probability
+    def get_n_rain_traffic_n_late(self):
+        return self.not_rain * self.not_rain_traffic * self.not_rain_traffic_not_late
 
+# function to get late probability
+    def get_late(self):
+        return round(self.late, 2)
 
+# function to get probability of Late, Rain, Heavy Traffic
+    def get_rain_traffic_late(self):
+        rain_traffic_late = self.rain * self.traffic * self.late
+        return round(rain_traffic_late, 2)
