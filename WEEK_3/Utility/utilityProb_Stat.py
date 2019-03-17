@@ -1,4 +1,7 @@
 import random
+import math
+
+
 # class to perform operation on probability and statistics
 class ProbabilityStatistics:
     # constructor
@@ -159,3 +162,37 @@ class ProbabilityStatistics:
         # else display not found
         else:
             return "No random number found in list of interval"
+
+# function to get mean value
+    def get_mean(self, x_list, n):
+        sum1 = 0
+        for x in x_list:
+            sum1 += x
+        return round(sum1/n, 2)
+
+# function to get x bar value
+    def get_x_bar(self, x_list, x):
+        new_list = []
+        for l in x_list:
+            new_list.append(round(l-x, 2))
+        return new_list
+
+# function to get square of variables
+    def get_x_y_square(self, sqr_list):
+        square = []
+        for sq in sqr_list:
+            square.append(round(sq*sq, 2))
+        return square
+
+    def get_sum_of_square(self, x_list):
+        sum1 = 0
+        for x in x_list:
+            sum1 += x
+        return round(sum1, 2)
+
+# function to calculate coefficient of correlation
+    def get_coefficient_of_correlation(self, sum_x, sum_y):
+        xy = -86.9
+        x_and_y = sum_x * sum_y
+        coe = xy / math.sqrt(x_and_y)
+        return round(coe, 2)
