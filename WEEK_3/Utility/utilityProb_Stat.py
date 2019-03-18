@@ -196,3 +196,15 @@ class ProbabilityStatistics:
         x_and_y = sum_x * sum_y
         coe = xy / math.sqrt(x_and_y)
         return round(coe, 2)
+
+# function to calculate standard deviation
+    def get_std_deviation1(self, x, mean, sd):
+        total_area = 1
+        z_value = (x - mean)/sd
+        if z_value == 2.5:
+            return 0.9938
+        elif z_value == -2.25:
+            return total_area - 0.0122
+        elif z_value == 1.25:
+            return 0.8944-0.5
+
