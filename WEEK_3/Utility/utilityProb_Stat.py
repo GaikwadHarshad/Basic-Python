@@ -218,3 +218,12 @@ class ProbabilityStatistics:
         # calculate probability of car speed higher than 100 km/hr
         return round(total_area - area_left_z_value, 4)
 
+    # function for getting the probability of  total time the bank teller spends serving 50 customers
+    @staticmethod
+    def probability_customer(l_mean, l_standard_deviation, l_n, l_x1, l_x2):
+        # getting z_score value1
+        z_score1 = (l_x1 - l_mean * l_n) / (l_standard_deviation * (l_n ** 0.5))
+        # getting z_score value2
+        z_score2 = (l_x2 - l_mean * l_n) / (l_standard_deviation * (l_n ** 0.5))
+        return z_score1, z_score2
+
