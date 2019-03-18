@@ -208,3 +208,13 @@ class ProbabilityStatistics:
         elif z_value == 1.25:
             return 0.8944-0.5
 
+# find out whether the probability of x is higher than 100 or p(x > 100)
+    def get_probability_higher(self, x, mean, std_deviation):
+        # getting z value
+        z_value = (x - mean)/std_deviation
+        total_area = z_value
+        # getting area left to z value = 1
+        area_left_z_value = 0.8413
+        # calculate probability of car speed higher than 100 km/hr
+        return round(total_area - area_left_z_value, 4)
+
