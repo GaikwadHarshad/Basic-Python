@@ -227,3 +227,9 @@ class ProbabilityStatistics:
         z_score2 = (l_x2 - l_mean * l_n) / (l_standard_deviation * (l_n ** 0.5))
         return z_score1, z_score2
 
+    @staticmethod
+    # get probability that there are more than 120 errors in a certain data packet
+    def probability_data_packet(l_mean, l_standard_deviation, l_n, l_x):
+        # getting probability using z_score
+        z_score = (l_x - l_mean) / (l_standard_deviation * (l_n ** 0.5))
+        return z_score
