@@ -233,3 +233,11 @@ class ProbabilityStatistics:
         # getting probability using z_score
         z_score = (l_x - l_mean) / (l_standard_deviation * (l_n ** 0.5))
         return z_score
+
+    @staticmethod
+    def prescribed_pain_killers_given_addict(event1, event2, event3, event4):
+        # get total probability of patients
+        total_probability = event1 * event2 + event3 * event4
+        # probability of pain pills for patients to be prescribed
+        probability = (event1 * event2) / total_probability
+        return probability
