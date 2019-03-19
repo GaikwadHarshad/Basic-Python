@@ -14,6 +14,10 @@ class InverseMatrix(Matrix):
 
     def inverse_matrix(self):
         try:
+            print("Original Matrix : ")
+            for v in range(len(self.x)):
+                print(self.x[v])
+
             # getting inverse of matrix
             c = self.util.get_inverse_matrix(self.x)
             print("Inverse of matrix : ")
