@@ -7,7 +7,7 @@ class NumPyProgram:
     choice = 0
 
     def numpy_operations(self):
-        # list of programs
+        # list of program
         print()
         print("11. find the number of elements of an array, length of one array element""\n"
               "   in bytes and total bytes consumed by the elements")
