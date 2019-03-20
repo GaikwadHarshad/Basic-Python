@@ -41,6 +41,6 @@ class AddMatrices(Matrix):
             print(e)
 
 
-# instantiation
+# instantiation of class
 AddMatrices_object = AddMatrices()
 AddMatrices_object.add_matrices()
