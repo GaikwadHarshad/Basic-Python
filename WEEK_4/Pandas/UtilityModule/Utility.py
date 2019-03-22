@@ -69,3 +69,10 @@ class UtilityClass:
         # delete data from DataFrame
         data = data.drop('k')
         return data
+
+    @staticmethod
+    def add_new_col_in_data_frame(data_frame):
+        city = ['berkeley', 'paris', 'US', 'Africa', 'budapest', 'LA', 'NY', 'spain', 'colombo', 'costa rica']
+        # inserting new column to DataFrame
+        data_frame['city'] = city
+        return data_frame
