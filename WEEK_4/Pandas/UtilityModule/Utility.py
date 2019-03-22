@@ -60,3 +60,12 @@ class UtilityClass:
         # 2 dimensional tabular structure and size mutable with labels axis
         data_frame = pd.DataFrame(exam_data, index=labels)
         return data_frame
+
+    @staticmethod
+    def change_in_data_frame(data):
+        # inserting new data to DataFrame
+        data.loc['k'] = ['harsh', 15.5, 1, 'yes']
+        print("\n""After change :""\n", data)
+        # delete data from DataFrame
+        data = data.drop('k')
+        return data
