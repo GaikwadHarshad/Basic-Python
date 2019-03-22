@@ -2,7 +2,7 @@ from myprograms.Utility.UtilityDS import validate_num
 from myprograms.WEEK_4.Pandas.UtilityModule.Utility import UtilityClass
 
 
-# class for mathematical/logical operation using NumPy
+# class to perform data analysis/data manipulation operation using pandas data structure
 class PandasProgram(UtilityClass):
     choice = 0
 
