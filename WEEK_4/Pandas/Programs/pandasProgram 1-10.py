@@ -1,5 +1,3 @@
-import pandas as pd
-import numpy as np
 from myprograms.Utility.UtilityDS import validate_num
 from myprograms.WEEK_4.Pandas.UtilityModule.Utility import UtilityClass
 
@@ -19,6 +17,10 @@ class PandasProgram(UtilityClass):
         print("4. program to get the powers of an array values element-wise")
         print("5. create and display a DataFrame from a specified dictionary data which has the index labels")
         print("6. display a summary of the basic information about a specified Data Frame and its data.")
+        print("7. program to get the first 3 rows of a given DataFrame")
+        print("8. program to select the 'name' and 'score' columns from the given DataFrame. ")
+        print("9. select the specified columns and rows from a given data frame."
+              "Select 'name' and 'score' columns in rows 1, 3, 5, 6 from the given data frame")
         print("0. Exit")
         print()
         while True:
@@ -87,8 +89,24 @@ class PandasProgram(UtilityClass):
                     elif choice == 6:
                         df = UtilityClass.get_data_frame()
                         print("Summary of basic information about specified data frame")
-                        # 
+                        # summary of data frame
                         print(df.info())
+                    elif choice == 7:
+                        df = UtilityClass.get_data_frame()
+                        print("data frame :")
+                        print(df, "\n")
+                        print("First 3 rows of data frame:")
+                        print(df.iloc[:3])
+                    elif choice == 8:
+                        df = UtilityClass.get_data_frame()
+                        # getting name and score column from DataFrame
+                        print(df[['name', 'score']])
+                    elif choice == 9:
+                        df = UtilityClass.get_data_frame()
+                        print(df, "\n")
+                        print("specified column and row from given DataFrame""\n")
+                        # getting specific column and row from DataFrame
+                        print(df.iloc[[1, 3, 5, 6], [0, 1]])
                     elif choice == 0:
                         exit()
                     else:
