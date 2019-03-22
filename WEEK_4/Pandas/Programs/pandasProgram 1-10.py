@@ -1,3 +1,5 @@
+import pandas as pd
+import numpy as np
 from myprograms.Utility.UtilityDS import validate_num
 from myprograms.WEEK_4.Pandas.UtilityModule.Utility import UtilityClass
 
@@ -15,6 +17,8 @@ class PandasProgram(UtilityClass):
         print("2. convert a Panda module Series to Python list and it's type")
         print("3. program to add, subtract, multiple and divide two Pandas Series")
         print("4. program to get the powers of an array values element-wise")
+        print("5. create and display a DataFrame from a specified dictionary data which has the index labels")
+        print("6. display a summary of the basic information about a specified Data Frame and its data.")
         print("0. Exit")
         print()
         while True:
@@ -76,7 +80,15 @@ class PandasProgram(UtilityClass):
                         power = UtilityClass.get_power()
                         print("Power of array value to element wise:")
                         print(power)
-
+                    elif choice == 5:
+                        # get data frame for specified data
+                        df = UtilityClass.get_data_frame()
+                        print(df)
+                    elif choice == 6:
+                        df = UtilityClass.get_data_frame()
+                        print("Summary of basic information about specified data frame")
+                        # 
+                        print(df.info())
                     elif choice == 0:
                         exit()
                     else:
