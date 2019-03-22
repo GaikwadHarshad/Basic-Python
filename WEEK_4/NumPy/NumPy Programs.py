@@ -104,6 +104,6 @@ class NumPyProgram:
                 print(e)
 
 
-# instantiation
+# instantiation of class
 NumPyProgram_object = NumPyProgram()
 NumPyProgram_object.numpy_operations()
