@@ -21,6 +21,7 @@ class PandasProgram(UtilityClass):
         print("8. program to select the 'name' and 'score' columns from the given DataFrame. ")
         print("9. select the specified columns and rows from a given data frame."
               "Select 'name' and 'score' columns in rows 1, 3, 5, 6 from the given data frame")
+        print("10. select the rows where the number of attempts in the examination is greater than 2. ")
         print("0. Exit")
         print()
         while True:
@@ -107,6 +108,10 @@ class PandasProgram(UtilityClass):
                         print("specified column and row from given DataFrame""\n")
                         # getting specific column and row from DataFrame
                         print(df.iloc[[1, 3, 5, 6], [0, 1]])
+                    elif choice == 10:
+                        df = UtilityClass.get_data_frame()
+                        # get specific row from subset of rows
+                        print(df.ix[[1, 3, 5], ['name', 'score']])
                     elif choice == 0:
                         exit()
                     else:
