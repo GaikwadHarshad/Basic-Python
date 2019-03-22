@@ -14,6 +14,7 @@ class PandasProgram(UtilityClass):
         # list of programs
         print("1. create and display a 1-D array-like object containing an array of data using Pandas module")
         print("2. convert a Panda module Series to Python list and it's type")
+        print("3. program to add, subtract, multiple and divide two Pandas Series")
         print("0. Exit")
         print()
         while True:
@@ -46,6 +47,29 @@ class PandasProgram(UtilityClass):
                             # convert series data into python list and display type
                             print("Converted python list : ", data.tolist())
                             print("Type of python list : ", type(data.tolist()))
+                        else:
+                            print("Please enter numeric value")
+                    elif choice == 3:
+                        n = input("How many element you want to add:")
+                        if validate_num(n):
+                            num = int(n)
+                            # getting 1st series of data from pandas module
+                            data1 = UtilityClass.series_data(self, num)
+                            print("First pandas series : ")
+                            print("Pandas Series 1:""\n", data1)
+                            print("New series : ")
+                            # getting 1st series of data from pandas module
+                            data2 = UtilityClass.series_data2(self, num)
+                            print("Second pandas series : ")
+                            print("Pandas Series 2:""\n", data2)
+                            add = UtilityClass.series_addition(data1, data2)
+                            print("Addition:""\n", add)
+                            sub = UtilityClass.series_subtract(data1, data2)
+                            print("Subtraction:""\n", sub)
+                            mul = UtilityClass.series_multiplication(data1, data2)
+                            print("Multiplication:""\n", mul)
+                            div = UtilityClass.series_division(data1, data2)
+                            print("Division:""\n", div)
                         else:
                             print("Please enter numeric value")
                     elif choice == 0:
