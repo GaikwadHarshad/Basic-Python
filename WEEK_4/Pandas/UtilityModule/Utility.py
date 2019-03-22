@@ -1,4 +1,5 @@
 import pandas as pd
+import numpy as np
 
 
 class UtilityClass:
@@ -39,4 +40,10 @@ class UtilityClass:
 
     @staticmethod
     def series_division(data1, data2):
-        return data1 /data2
+        return data1 / data2
+
+    @staticmethod
+    def get_power():
+        data = np.arange(7)
+        print(data)
+        return np.power(data, 3)

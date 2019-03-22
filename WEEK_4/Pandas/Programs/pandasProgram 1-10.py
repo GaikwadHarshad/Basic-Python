@@ -1,4 +1,3 @@
-import pandas as pd
 from myprograms.Utility.UtilityDS import validate_num
 from myprograms.WEEK_4.Pandas.UtilityModule.Utility import UtilityClass
 
@@ -15,6 +14,7 @@ class PandasProgram(UtilityClass):
         print("1. create and display a 1-D array-like object containing an array of data using Pandas module")
         print("2. convert a Panda module Series to Python list and it's type")
         print("3. program to add, subtract, multiple and divide two Pandas Series")
+        print("4. program to get the powers of an array values element-wise")
         print("0. Exit")
         print()
         while True:
@@ -72,6 +72,11 @@ class PandasProgram(UtilityClass):
                             print("Division:""\n", div)
                         else:
                             print("Please enter numeric value")
+                    elif choice == 4:
+                        power = UtilityClass.get_power()
+                        print("Power of array value to element wise:")
+                        print(power)
+
                     elif choice == 0:
                         exit()
                     else:
