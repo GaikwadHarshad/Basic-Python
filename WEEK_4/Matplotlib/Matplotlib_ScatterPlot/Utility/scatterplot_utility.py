@@ -36,3 +36,18 @@ def get_random_distribution():
         value = np.random.randn(x)
     return value
 
+
+# get  marks
+def get_marks(length):
+    mark_list = []
+    try:
+        for e in range(length):
+            input1 = int(input("Enter marks : "))
+            valid = validate_num(input1)
+            if valid:
+                mark_list.append(input1)
+            else:
+                print("enter number only")
+    except Exception as e:
+        print(e)
+    return mark_list
