@@ -35,3 +35,4 @@ def get_random_distribution():
         # generate array of random number
         value = np.random.randn(x)
     return value
+
