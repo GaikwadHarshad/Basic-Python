@@ -1,3 +1,5 @@
+import numpy as np
+
 
 def validate_num(num):
     try:
@@ -21,3 +23,15 @@ def create_list_all(element):
         print(e)
     return li
 
+
+# get random distribution of x and y
+def get_random_distribution():
+    value = 0
+    x = input("Enter random distribution in x:")
+    # validate random value for x
+    validate = validate_num(x)
+    if validate:
+        x = int(x)
+        # generate array of random number
+        value = np.random.randn(x)
+    return value
