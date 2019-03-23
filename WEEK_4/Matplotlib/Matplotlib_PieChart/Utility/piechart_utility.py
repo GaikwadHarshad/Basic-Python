@@ -1,4 +1,3 @@
-
 def validate_num(num):
     try:
         int(num)
