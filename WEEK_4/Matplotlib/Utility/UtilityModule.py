@@ -37,3 +37,7 @@ class Utility:
             words = int(input("enter value"))
             lst.append(words)
         return lst
+
+    def accept_size(self):
+        n = int(input("enter how many values u wanna plot"))
+        return n
