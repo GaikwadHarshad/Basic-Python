@@ -31,4 +31,9 @@ class Utility:
                 if ans == 'n' or ans == 'N':
                     return "exit..."
 
-
+    def CreateList(self, size):
+        lst = []
+        for i in range(size):
+            words = int(input("enter value"))
+            lst.append(words)
+        return lst
