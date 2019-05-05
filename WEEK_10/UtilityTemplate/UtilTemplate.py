@@ -7,6 +7,7 @@ from sklearn.preprocessing import StandardScaler
 from sklearn.linear_model import LinearRegression
 from sklearn.linear_model import LogisticRegression
 from sklearn.neighbors import KNeighborsClassifier
+from sklearn.svm import SVC
 from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import LabelEncoder, OneHotEncoder
 from sklearn.tree import DecisionTreeRegressor
@@ -58,6 +59,12 @@ class Template:
         classifier.fit(x,y)
         return classifier
         
+#     fitting SVM classification model
+    def Fit_Model_SVM(self,x,y):
+        classifier = SVC(kernel='linear',random_state=0)
+        classifier.fit(x,y)
+        return classifier
+    
 #    prediction over x data 
     def prediction(self,x_data,regressor):
         predicted = regressor.predict(x_data)
