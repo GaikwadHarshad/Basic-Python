@@ -6,6 +6,7 @@ from sklearn.preprocessing import Imputer
 from sklearn.preprocessing import StandardScaler
 from sklearn.linear_model import LinearRegression
 from sklearn.linear_model import LogisticRegression
+from sklearn.neighbors import KNeighborsClassifier
 from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import LabelEncoder, OneHotEncoder
 from sklearn.tree import DecisionTreeRegressor
@@ -51,7 +52,18 @@ class Template:
         classifier.fit(x,y)
         return classifier
     
+#     fitting k neighbors classification model
+    def Fit_Model_KNN(self,x,y):
+        classifier = KNeighborsClassifier(n_neighbors=5, metric='minkowski', p=2) 
+        classifier.fit(x,y)
+        return classifier
+        
 #    prediction over x data 
     def prediction(self,x_data,regressor):
         predicted = regressor.predict(x_data)
+        return predicted
+
+#    prediction over x data 
+    def prediction_classifier(self,x_data,classifier):
+        predicted = classifier.predict(x_data)
         return predicted
