@@ -7,6 +7,7 @@ from sklearn.preprocessing import StandardScaler
 from sklearn.linear_model import LinearRegression
 from sklearn.linear_model import LogisticRegression
 from sklearn.neighbors import KNeighborsClassifier
+from sklearn.tree import DecisionTreeClassifier
 from sklearn.svm import SVC
 from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import LabelEncoder, OneHotEncoder
@@ -62,6 +63,12 @@ class Template:
 #     fitting SVM classification model
     def Fit_Model_SVM(self,x,y):
         classifier = SVC(kernel='linear',random_state=0)
+        classifier.fit(x,y)
+        return classifier
+    
+#     fitting decision tree classification model
+    def Fit_Model_DecisionTree(self,x,y):
+        classifier = DecisionTreeClassifier(criterion='entropy',random_state=0)
         classifier.fit(x,y)
         return classifier
     
