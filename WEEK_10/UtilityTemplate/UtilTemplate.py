@@ -41,7 +41,7 @@ class Template:
     def feature_scaling(self,x):
         ss = StandardScaler()
         x = ss.fit_transform(x)
-        return x
+        return x,ss
     
 #     fitting linear regression model
     def Fit_Model(self,x,y):
