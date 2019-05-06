@@ -8,6 +8,7 @@ from sklearn.linear_model import LinearRegression
 from sklearn.linear_model import LogisticRegression
 from sklearn.neighbors import KNeighborsClassifier
 from sklearn.tree import DecisionTreeClassifier
+from sklearn.ensemble import RandomForestClassifier
 from sklearn.svm import SVC
 from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import LabelEncoder, OneHotEncoder
@@ -71,6 +72,12 @@ class Template:
         classifier = DecisionTreeClassifier(criterion='entropy',random_state=0)
         classifier.fit(x,y)
         return classifier
+    
+#     fitting RandomForest classification model
+    def Fit_Model_RandomForest(self,x,y):
+        classifier = RandomForestClassifier(n_estimators=10,criterion='entropy',random_state=0)
+        classifier.fit(x,y)
+        return classifier    
     
 #    prediction over x data 
     def prediction(self,x_data,regressor):
