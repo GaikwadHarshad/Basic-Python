@@ -12,6 +12,7 @@ from sklearn.ensemble import RandomForestClassifier
 from sklearn.svm import SVC
 from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import LabelEncoder, OneHotEncoder
+from collections import defaultdict
 from sklearn.tree import DecisionTreeRegressor
 from sklearn.metrics import explained_variance_score
 from sklearn.metrics import *
@@ -42,6 +43,20 @@ class Template:
         ss = StandardScaler()
         x = ss.fit_transform(x)
         return x,ss
+    
+    def one_hot_encode(self,x_data):
+        # from collections import defaultdict
+        d = defaultdict(LabelEncoder)
+        # Encoding the variable
+        fit = x_data.apply(lambda x: d[x.name].fit_transform(x))
+        # Inverse the encoded
+        fit.apply(lambda x: d[x.name].inverse_transform(x))
+        # Using the dictionary to label future data
+        x_data.apply(lambda x: d[x.name].transform(x))
+        one_hot_encode = OneHotEncoder()
+        one_hot_encode.fit(x_data)
+        x_data=one_hot_encode.transform(x_data).toarray()
+        return x_data
     
 #     fitting linear regression model
     def Fit_Model(self,x,y):
